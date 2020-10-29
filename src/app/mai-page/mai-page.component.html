@@ -1,0 +1,12 @@
+<div id="mainContainer">
+    <h1>
+        {{ mainHeader }}
+    </h1>
+    <p id="mainParagraph">
+        Coś o sobie.
+    </p>
+    <div *ngFor="let project of projectList; index as i;">
+        <img bind-src="projectList[i].image">
+    </div>
+    <a href="http://www.freepik.com">Designed by starline / Freepik</a>
+</div>
